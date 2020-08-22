@@ -15,6 +15,11 @@
 		0DC256AF24F0F4A0009C6BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC256AD24F0F4A0009C6BA5 /* LaunchScreen.storyboard */; };
 		0DC256BA24F0F4A0009C6BA5 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256B924F0F4A0009C6BA5 /* TableViewTests.swift */; };
 		0DC256C524F0F4A0009C6BA5 /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256C424F0F4A0009C6BA5 /* TableViewUITests.swift */; };
+		0DC256D524F151B9009C6BA5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256D424F151B9009C6BA5 /* InfoViewController.swift */; };
+		0DC256D724F153D7009C6BA5 /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256D624F153D7009C6BA5 /* SecondViewViewController.swift */; };
+		0DC256D924F1678E009C6BA5 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256D824F1678E009C6BA5 /* DocumentViewController.swift */; };
+		0DC256DB24F16B10009C6BA5 /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256DA24F16B10009C6BA5 /* ButtonDesign.swift */; };
+		0DC256DD24F16B40009C6BA5 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC256DC24F16B40009C6BA5 /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		0DC256C024F0F4A0009C6BA5 /* TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC256C424F0F4A0009C6BA5 /* TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITests.swift; sourceTree = "<group>"; };
 		0DC256C624F0F4A0009C6BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC256D424F151B9009C6BA5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0DC256D624F153D7009C6BA5 /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
+		0DC256D824F1678E009C6BA5 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		0DC256DA24F16B10009C6BA5 /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
+		0DC256DC24F16B40009C6BA5 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,18 @@
 		0DC256A124F0F49E009C6BA5 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				0DC256DC24F16B40009C6BA5 /* ColorManager.swift */,
 				0DC256A224F0F49E009C6BA5 /* AppDelegate.swift */,
 				0DC256A424F0F49E009C6BA5 /* SceneDelegate.swift */,
 				0DC256A624F0F49E009C6BA5 /* ViewController.swift */,
+				0DC256D424F151B9009C6BA5 /* InfoViewController.swift */,
+				0DC256D824F1678E009C6BA5 /* DocumentViewController.swift */,
 				0DC256A824F0F49E009C6BA5 /* Main.storyboard */,
 				0DC256AB24F0F4A0009C6BA5 /* Assets.xcassets */,
 				0DC256AD24F0F4A0009C6BA5 /* LaunchScreen.storyboard */,
 				0DC256B024F0F4A0009C6BA5 /* Info.plist */,
+				0DC256D624F153D7009C6BA5 /* SecondViewViewController.swift */,
+				0DC256DA24F16B10009C6BA5 /* ButtonDesign.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -261,7 +276,12 @@
 			files = (
 				0DC256A724F0F49E009C6BA5 /* ViewController.swift in Sources */,
 				0DC256A324F0F49E009C6BA5 /* AppDelegate.swift in Sources */,
+				0DC256D724F153D7009C6BA5 /* SecondViewViewController.swift in Sources */,
+				0DC256DB24F16B10009C6BA5 /* ButtonDesign.swift in Sources */,
+				0DC256D924F1678E009C6BA5 /* DocumentViewController.swift in Sources */,
+				0DC256D524F151B9009C6BA5 /* InfoViewController.swift in Sources */,
 				0DC256A524F0F49E009C6BA5 /* SceneDelegate.swift in Sources */,
+				0DC256DD24F16B40009C6BA5 /* ColorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -435,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X7Q6B72BR;
 				INFOPLIST_FILE = TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X7Q6B72BR;
 				INFOPLIST_FILE = TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
